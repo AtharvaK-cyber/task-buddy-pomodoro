@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Task Buddy — Pomodoro & Charts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <button id="darkToggle">🌙</button>
+    <input id="searchInput" placeholder="Search title or tags..." />
+    <button id="exportCsv">Export CSV</button>
+  </div>
+
+  <div class="container">
+    <h1>Task Buddy 🔔</h1>
+
+    <div class="summary" id="summary">Loading...</div>
+
+    <form id="taskForm" class="task-form">
+      <input type="text" id="title" placeholder="Task title" required />
+      <input type="date" id="due" required />
+      <input type="text" id="tags" placeholder="tags (comma separated)" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="controls">
+      <button id="refreshBtn" class="small-btn">Refresh</button>
+      <label>Sort:
+        <select id="sortSelect">
+          <option value="default">Priority → Due</option>
+          <option value="due">Due date</option>
+          <option value="title">Title</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="pomodoroArea" class="pomodoro-area">
+      <h3>Pomodoro Timer</h3>
+      <div id="pomodoroControls">
+        <select id="pomTaskSelect"></select>
+        <button id="startPom">Start 25m</button>
+        <button id="stopPom" disabled>Stop</button>
+        <div id="pomTimer">25:00</div>
+      </div>
+    </div>
+
+    <canvas id="priorityChart" width="600" height="160"></canvas>
+
+    <div id="taskList" class="task-list"></div>
+    <footer><small>Saved locally. Brief: <a href="file:///mnt/data/content.pdf">content.pdf</a></small></footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

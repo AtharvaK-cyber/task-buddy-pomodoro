@@ -1,0 +1,27 @@
+:root {
+  --bg:#eef5fb; --card:#fff; --text:#111; --accent:#1f7ae0;
+}
+body.dark { --bg:#0f1720; --card:#0b1220; --text:#e6eef8; --accent:#60a5fa; }
+body { font-family: "Segoe UI", Roboto, Arial, sans-serif; background:var(--bg); margin:20px; color:var(--text); }
+.topbar { display:flex; gap:8px; justify-content:flex-end; padding:6px 20px; }
+.topbar input { flex:1; padding:8px; border-radius:6px; border:1px solid #ddd; }
+.container { max-width:900px; margin:10px auto; background:var(--card); padding:22px; border-radius:10px; box-shadow:0 6px 20px rgba(18,34,63,0.06); }
+h1 { margin:0 0 10px 0; font-size:28px; color:var(--text); }
+.task-form { display:flex; gap:10px; margin:14px 0; }
+input[type="text"], input[type="date"]{ padding:10px; flex:1; border:1px solid #d6e0ea; border-radius:6px; background:transparent; color:var(--text); }
+button { background:var(--accent); color:white; padding:10px 12px; border:none; border-radius:6px; cursor:pointer; }
+.small-btn { background:#eee; color:#222; padding:6px 8px; border-radius:6px; border:1px solid #ddd; cursor:pointer; }
+.task-list { margin-top:18px; }
+.task { padding:12px; border-radius:8px; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; border:1px solid #f0f4f8; background:var(--card); }
+.task-left { max-width:72%; }
+.meta { font-size:12px; color:#666; margin-top:6px; }
+.priority-high { border-left:6px solid #e65151; }
+.priority-medium { border-left:6px solid #f0ad4e; }
+.priority-low { border-left:6px solid #4caf50; }
+.completed { opacity:0.6; text-decoration:line-through; }
+.controls { display:flex; gap:10px; align-items:center; margin-top:6px; }
+.task-actions { display:flex; gap:8px; align-items:center; }
+.delete-btn { background:#ff6b6b; border:none; color:white; padding:6px 8px; border-radius:6px; cursor:pointer; }
+.badge-soon { background:#ffecec; color:#b40f0f; padding:2px 8px; border-radius:12px; font-size:12px; margin-left:8px; }
+footer { margin-top:18px; color:#777; font-size:12px; }
+#pomTimer { font-size:18px; margin-left:12px; display:inline-block; min-width:64px; }
