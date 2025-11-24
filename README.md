@@ -82,13 +82,6 @@ http://localhost:8081/
 - Export CSV  
 - Check JSON persistence  
 
----
-
-## 📄 Project Brief  
-The project brief provided for this assignment is available at:  
-`file:///mnt/data/content.pdf`
-
----
 
 ## 👨‍💻 Author  
 Name:Atharva Katare
