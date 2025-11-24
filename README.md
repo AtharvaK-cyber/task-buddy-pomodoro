@@ -10,7 +10,7 @@ HTML/CSS/JavaScript for the frontend.
 ## 🚀 Features
 
 ### ✅ Task Management
-- Add, edit, delete tasks  
+- Add, edit, delete abd manage tasks  
 - Auto-calculated priority (High / Medium / Low)  
 - “Due Soon” badge  
 - Tags and search filter  
